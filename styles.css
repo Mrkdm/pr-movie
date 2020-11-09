@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-nav{
+    background: #223;
+    color: #fff;
+    height: 70px;
+}
+
+#main-nav__bar-menu{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 23px;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+.main-nav__menu-categories{
+    background: #445;
+    text-align: center;
+    width: 280px;
+    height: 100vh;
+    left: -400px;
+    z-index: 1000;
+    position: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: ease-in-out 600ms;
+}
+
+.main-nav__menu-categories.active{
+    left: 0px;
+}
+
+.container-movieMain{
+    width: 100%;
+    height: 80vh;
+    background: url(./img/img-pr__movie.jpg) center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  
+  
+}
+.container-movieMain .container-movieMain__btn-see{
+    background: #48f;
+    color: #fff;
+    top: 50%;
+    left: 10%;
+    opacity: 1;
+    position: absolute;
+    border: none;
+    font-size: 20px;
+    padding: 10px 35px;
+    border-radius: 13px;
+    cursor: pointer;
+}
+.container-movieMain .container-movieMain__name-movie{
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    position: absolute;
+    left: 10%;
+    top: 230px;
+}
